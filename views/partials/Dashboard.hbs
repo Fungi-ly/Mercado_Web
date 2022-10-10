@@ -1,0 +1,23 @@
+{{#if Bienvenida}}
+<p class="pt-2 py-1 my-0"><h1 class='d-flex justify-content-center'>{{Bienvenida}}</h1></p>
+{{> Productos}}
+{{/if}}
+{{#unless Bienvenida}}
+<h1>Inicie sesión para ver la lista de productos.</h1>
+{{/unless}}
+
+
+
+
+
+{{!-- {{#if usuario}}
+<h1>
+    Bienvenid@: {{usuario}} al mercado WEB, seleccione sus productos
+</h1>
+<br>
+{{> Productos}}
+{{/if}}
+{{#unless usuario}}
+<h1>Inicie sesión para ver la lista de productos.</h1>
+{{/unless}} --}}
+

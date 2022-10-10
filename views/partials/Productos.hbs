@@ -1,0 +1,37 @@
+<div class="container d-flex">
+    <div class="row p-5 m-auto">
+        {{#each Productos}}
+        <div class="col-4 p-2">
+            <div class='product m-auto' style="background-image: url('{{this}}.png')">
+                <h3>{{this}}</h3>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
+<style>
+    .product {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 150px;
+        height: 150px;
+        text-align: left;
+    }
+</style>
+
+
+
+
+{{!-- <div class='container row pt-5'>
+    <div>
+        <img src='banana.png' class='col-sm mb-2 px-5' height="200">
+        <img src='cebollas.png' class='col-sm mb-2 px-5' height="200">
+        <img src='lechuga.png' class='col-sm mb-2 px-5' height="200">
+    </div>
+    <div>
+        <img src='papas.png' class='col-sm px-5' height="200">
+        <img src='pimenton.png' class='col-sm px-5' height="200">
+        <img src='tomate.png' class='col-sm px-5' height="180">
+    </div>
+</div> --}}
